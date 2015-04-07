@@ -1,4 +1,13 @@
-﻿$agent = "Rackspace Management Interface"
+﻿<#
+
+	Generate User Key and Secret Key from E-Mail Admin controll panel at Rackspace.
+	
+	ARW Specific code:
+		Path variables for arwplans.com and americanrw.com
+		Function - Build Headers
+		
+
+$agent = "Rackspace Management Interface"
 $ukey = "User Key"
 $skey = "Secret Key"
 $timestamp = Get-Date -Format yyyyMMddHHmmss
@@ -12,21 +21,6 @@ $arwplans = "https://api.emailsrvr.com/v1/domains/arwplans.com"
 $americanrw = "https://api.emailsrvr.com/v1/domains/americanrw.com"
 $mailbox_url = "rs/mailboxes"
 $alias_url = "rs/aliases"
-
-<#
-
-    Department URLs
-
-#>
-
-$accounting_alias = "rs/aliases/accounting"
-$alarmsales_alias = "rs/aliases/alarmsales"
-$billing_alias = "rs/aliases/billing/"
-$customerservice_alias = "rs/aliases/customerservice"
-$it_alias = "rs/aliases/it"
-$marketing_alias = "rs/aliases/marketing"
-$warrantysales_alias = "rs/aliases/warrantysales"
-
 
 function hash{
 
